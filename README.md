@@ -1,5 +1,5 @@
 # ![image](https://github.com/Androecia/FriendConnect-Docker/assets/59907407/99380263-9666-4e5d-9b1f-4fdc4f3b3036)FriendConnect-Docker | [Discord](https://discord.gg/gpQsX2UVQ7)
-Run FriendConnect through Docker or Podman ``(The instructions will be for Docker; everything should be compatible with podman and podman-compose)``
+Run FriendConnect through Docker or Podman ``(If using podman, substitute podman-compose where you see docker compose)``
 
 ## Get Started
 ### Dependencies
