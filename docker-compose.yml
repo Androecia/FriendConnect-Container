@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  friendconnect:
+    build: .
+    volumes:
+      - "./config/index.js:/FriendConnect/index.js"
+      - "./auth:/FriendConnect/auth"
+    environment:
+      FRIEND_CONNECT_DEBUG: "false" # Set to "true" if you want to enable debugging
+
+# NOTICE
+# The following error is expected and can be safely ignored.
+
+# friendconnect-friendconnect-1  | [FriendConnect ] Server Advertisement Error
+# friendconnect-friendconnect-1  | Error Name:  TypeError
+# friendconnect-friendconnect-1  | Error Message:  Wrong arguments
+# friendconnect-friendconnect-1  | Error Stack:  TypeError: Wrong arguments
+# friendconnect-friendconnect-1  |     at new Client (/FriendConnect/node_modules/raknet-native/lib/RakNet.js:8:19)
+# friendconnect-friendconnect-1  |     at new RakNativeClient (/FriendConnect/node_modules/bedrock-protocol/src/rak.js:45:19)
+# friendconnect-friendconnect-1  |     at ping (/FriendConnect/node_modules/bedrock-protocol/src/createClient.js:87:15)
+# friendconnect-friendconnect-1  |     at Session.getAdvertisement (file:///FriendConnect/node_modules/friend-connect/dist/index.js:419:30)
+# friendconnect-friendconnect-1  |     at new Session (file:///FriendConnect/node_modules/friend-connect/dist/index.js:76:14)
+# friendconnect-friendconnect-1  |     at file:///FriendConnect/index.js:3:1
+# friendconnect-friendconnect-1  |     at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
