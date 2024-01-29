@@ -8,6 +8,7 @@ services:
       - "./auth:/FriendConnect/auth"
     environment:
       FRIEND_CONNECT_DEBUG: "false" # Set to "true" if you want to enable debugging
+    restart: unless-stopped
 
 # NOTICE
 # The following error is expected and can be safely ignored.
