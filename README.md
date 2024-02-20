@@ -1,9 +1,6 @@
 # ![image](https://github.com/Androecia/FriendConnect-Docker/assets/59907407/99380263-9666-4e5d-9b1f-4fdc4f3b3036)FriendConnect-Docker | [Discord](https://discord.gg/gpQsX2UVQ7)
 Run FriendConnect through Docker or Podman ``(If using podman, substitute podman-compose where you see docker compose)``
 
-# WARNING
-The image used in this latest release is bugged. Use the files from the version before this until we've looked into it: https://github.com/Androecia/FriendConnect-Docker/tree/6243fdf7d774d238e7a69cfa174dd2938fd61ae9
-
 ## Get Started
 ### Dependencies
 - You will need [Docker](https://docs.docker.com/engine/install/) or [Podman](https://podman.io/docs/installation#linux-distributions) installed. Click on whichever you want, then go to your distribution's instructions.
