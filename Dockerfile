@@ -15,7 +15,7 @@ RUN apt update && \
 RUN npm install friend-connect@0.7.6
 
 # Copy index.js and package.json
-COPY --chown=friendconnect:friendconnect index.js package.json ./
+COPY --chown=friendconnect:friendconnect config/index.js package.json ./
 
 # Apply ownership and permisisons for service user
 RUN chown -R friendconnect:friendconnect /FriendConnect && \
