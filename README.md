@@ -10,6 +10,10 @@ Run FriendConnect through Podman or Docker
 pip install podman-compose
 ```
 
+### FAQ
+- Q: What if I already have Docker installed? Will Podman break anything?
+- A: Don't worry, Podman is completely separate from Docker and can run alongside it without breaking anything. You absolutely can have both on your system.
+
 ### Podman Installation (recommended)
 - Create a folder for this service and go into the directory
 ```bash
