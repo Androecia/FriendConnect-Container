@@ -1,0 +1,52 @@
+services:
+  friendconnect:
+    build: .
+    read_only: true
+    volumes:
+      - type: volume
+        source: data
+        target: /FriendConnect
+        read_only: false
+    environment:
+    # If your value for an env var has spaces in it, you need to wrap the entire thing in quotes. See the WORLD_NAME entry below for an example.
+      - HOSTNAME=FriendConnect  # The hostname of the server
+      - "WORLD_NAME=Message TEST TEST of the Day: Hello World"  # The world name of the server
+      - VERSION=1.20.1  # The version of the server (This can be set to anything, it is just a string and has no real effect)
+      - PROTOCOL=685  # The protocol of the server
+      - CONNECTED_PLAYERS=0  # The connected players of the server
+      - MAX_CONNECTED_PLAYERS=40  # The max connected players of the server
+      - IP=tailvile.xyz  # The IP of the server
+      - PORT=19132  # The port of the server
+      - CONNECTION_TYPE=6  # The connection type of the server
+      - LOG=false  # If you want to log the server
+      - JOINABILITY=joinable_by_friends  # The joinability of the server
+      - AUTO_FRIENDING=true  # If you want to auto friend people
+      - PING_SERVER_FOR_INFO=true  # If you want to ping the server for info
+      - ACCOUNTS=  # The accounts to use, in a comma separated list
+      - CONSTANT_WORLD_NAME=false  # The constant world name
+      - CONSTANT_HOST_NAME=false  # The constant host name
+      - CONSTANT_MAX_CONNECTED_PLAYERS=false  # The constant max connected players
+      - CONSTANT_CONNECTED_PLAYERS=false  # The constant connected players
+      - CONSTANT_PROTOCOL=false  # The constant protocol
+      - CONSTANT_VERSION=false  # The constant version
+      - ACC_LIMIT=1  # The account limit
+      # - FRIEND_CONNECT_DEBUG=true  # Uncomment this line if you want debug messages
+
+volumes:
+  data:
+    driver: local
+
+# NOTICE
+# The following error is expected and can be safely ignored.
+
+# friendconnect-friendconnect-1  | [FriendConnect ] Server Advertisement Error
+# friendconnect-friendconnect-1  | Error Name:  TypeError
+# friendconnect-friendconnect-1  | Error Message:  Wrong arguments
+# friendconnect-friendconnect-1  | Error Stack:  TypeError: Wrong arguments
+# friendconnect-friendconnect-1  |     at new Client (/FriendConnect/node_modules/raknet-native/lib/RakNet.js:8:19)
+# friendconnect-friendconnect-1  |     at new RakNativeClient (/FriendConnect/node_modules/bedrock-protocol/src/rak.js:45:19)
+# friendconnect-friendconnect-1  |     at ping (/FriendConnect/node_modules/bedrock-protocol/src/createClient.js:87:15)
+# friendconnect-friendconnect-1  |     at Session.getAdvertisement (file:///FriendConnect/node_modules/friend-connect/dist/index.js:419:30)
+# friendconnect-friendconnect-1  |     at new Session (file:///FriendConnect/node_modules/friend-connect/dist/index.js:76:14)
+# friendconnect-friendconnect-1  |     at file:///FriendConnect/index.js:3:1
+# friendconnect-friendconnect-1  |     at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
