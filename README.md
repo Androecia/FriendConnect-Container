@@ -1,3 +1,19 @@
+<table>
+<tr>
+<td><img src="https://www.pngall.com/wp-content/uploads/8/Red-Warning-PNG-Free-Download.png" width="100"></td>
+<td align="center" bgcolor="#FFFF00">
+
+# WARNING
+
+**The software this image is for is deprecated,<br>
+and no longer works on the latest versions<br>
+of Minecraft Bedrock Edition.**
+
+</td>
+<td><img src="https://www.pngall.com/wp-content/uploads/8/Red-Warning-PNG-Free-Download.png" width="100"></td>
+</tr>
+</table>
+
 # ![image](https://github.com/Androecia/FriendConnect-Docker/assets/59907407/99380263-9666-4e5d-9b1f-4fdc4f3b3036)FriendConnect-Docker | [Discord](https://discord.gg/gpQsX2UVQ7)
 Run FriendConnect through Podman or Docker
 
